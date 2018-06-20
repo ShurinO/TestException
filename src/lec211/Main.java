@@ -9,5 +9,12 @@ public class Main {
         }finally {
             System.out.println("we were there");
         }
+
+        MyTest myTest = null;
+        try {
+            myTest.test();
+        } catch (MyException e) {
+            e.printStackTrace();
+        }
     }
 }
